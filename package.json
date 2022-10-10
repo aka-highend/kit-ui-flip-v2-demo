@@ -1,7 +1,6 @@
 {
-  "name": "KitUIFlipV2",
-  "version": "0.0.1",
-  "private": true,
+  "name": "kit-ui-flip-v2-demo",
+  "version": "1.0.0",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -40,5 +39,20 @@
       "json",
       "node"
     ]
-  }
+  },
+  "description": "Kit UI Flip V2 Demo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aka-highend/kit-ui-flip-v2-demo.git"
+  },
+  "keywords": [
+    "kit-ui-flip-v2-demo"
+  ],
+  "author": "Mohamad Fachrur Ridwan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aka-highend/kit-ui-flip-v2-demo/issues"
+  },
+  "homepage": "https://github.com/aka-highend/kit-ui-flip-v2-demo#readme"
 }
