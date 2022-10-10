@@ -7,7 +7,6 @@ import {
   StyleProp,
   ViewStyle,
 } from 'react-native';
-// import PropTypes from 'prop-types';
 
 import Color from '../../themes/colors';
 import Icons from '../../themes/icons';
@@ -77,14 +76,5 @@ const DefaultCheckbox = (props: CheckboxProps) => {
     </TouchableOpacity>
   );
 };
-
-// DefaultCheckbox.propTypes = {
-//   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-//   isActive: PropTypes.bool,
-//   setIsActive: PropTypes.func,
-//   isError: PropTypes.bool,
-//   title: PropTypes.string,
-//   disabled: PropTypes.bool,
-// };
 
 export default DefaultCheckbox;
