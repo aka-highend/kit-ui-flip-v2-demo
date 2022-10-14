@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, Text, ScrollView} from 'react-native';
 
-import {DefaultCheckbox, RadioButton} from './src/components';
+import Color from './src/themes/colors';
+import {DefaultCheckbox, RadioButton, DashedLine, Line} from './src/components';
 
 const dataActive = [
   {
@@ -47,10 +48,26 @@ const App = () => {
         />
         <DefaultCheckbox title="Checkbox 3" disabled={true} />
       </View>
+      <DashedLine
+        dashLength={5}
+        dashThickness={1}
+        dashColor={Color.lightGrey}
+        style={styles.dash}
+      />
       <View style={styles.container}>
         <Text style={styles.textTitle}>Radio Button</Text>
         <RadioButton data={dataActive} disabled={false} />
         <RadioButton data={dataDisabled} disabled={true} />
+      </View>
+      <View style={styles.container}>
+        <Text style={styles.textTitle}>Dividers</Text>
+        <DashedLine
+          dashLength={5}
+          dashThickness={1}
+          dashColor={Color.lightGrey}
+          style={styles.dash}
+        />
+        <Line borderColor={Color.customBlack30Percent} style={styles.line} />
       </View>
     </ScrollView>
   );
@@ -70,5 +87,11 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     fontSize: 20,
     textAlign: 'center',
+  },
+  dash: {
+    marginHorizontal: 15,
+  },
+  line: {
+    marginHorizontal: 15,
   },
 });

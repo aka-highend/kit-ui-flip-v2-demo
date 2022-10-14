@@ -96,6 +96,7 @@ const Color = {
   container: '#F3F5F6',
   white: '#FFFFFF',
   black: '#000000',
+  solidGrey: '#e8e8e8',
   customBlack30Percent: 'rgba(0, 0, 0, 0.3)',
   customBlack80Percent: 'rgba(0, 0, 0, 0.8)',
   customShadowGrey: '#B5B5B5',
