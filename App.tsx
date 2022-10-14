@@ -1,8 +1,15 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, Text, ScrollView} from 'react-native';
+import {
+  DefaultCheckbox,
+  RadioButton,
+  DashedLine,
+  Line,
+  FieldDropdown,
+} from './src/components';
 
 import Color from './src/themes/colors';
-import {DefaultCheckbox, RadioButton, DashedLine, Line} from './src/components';
+import Icons from './src/themes/icons';
 
 const dataActive = [
   {
@@ -68,6 +75,13 @@ const App = () => {
           style={styles.dash}
         />
         <Line borderColor={Color.customBlack30Percent} style={styles.line} />
+      </View>
+      <View style={styles.container}>
+        <Text style={styles.textTitle}>Dropdown</Text>
+        <FieldDropdown
+          placeholder="contoh dropdown"
+          sourceIcon={Icons.envelope}
+        />
       </View>
     </ScrollView>
   );
