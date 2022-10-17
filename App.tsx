@@ -6,6 +6,7 @@ import {
   DashedLine,
   Line,
   FieldDropdown,
+  CardKYC,
 } from './src/components';
 
 import Color from './src/themes/colors';
@@ -78,9 +79,31 @@ const App = () => {
       </View>
       <View style={styles.container}>
         <Text style={styles.textTitle}>Dropdown</Text>
-        <FieldDropdown
-          placeholder="contoh dropdown"
-          sourceIcon={Icons.envelope}
+        <View style={styles.dropdownContainer}>
+          <FieldDropdown
+            placeholder="contoh dropdown"
+            sourceIcon={Icons.envelope}
+          />
+        </View>
+        <View style={styles.dropdownContainer}>
+          <FieldDropdown placeholder="contoh dropdown 2" />
+        </View>
+      </View>
+      <View style={styles.container}>
+        <Text style={styles.textTitle}>Card KYC</Text>
+        <CardKYC
+          isPoint={51}
+          isFailedOrRejectedKYC={false}
+          isPendingKYC={false}
+          isIdentityNumberFilled={false}
+          isNewlyCreatedAccount={true}
+        />
+        <CardKYC
+          isPoint={50}
+          isFailedOrRejectedKYC={true}
+          isPendingKYC={true}
+          isIdentityNumberFilled={false}
+          isNewlyCreatedAccount={false}
         />
       </View>
     </ScrollView>
@@ -107,5 +130,8 @@ const styles = StyleSheet.create({
   },
   line: {
     marginHorizontal: 15,
+  },
+  dropdownContainer: {
+    marginTop: 15,
   },
 });

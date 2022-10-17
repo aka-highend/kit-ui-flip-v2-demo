@@ -28,6 +28,9 @@ const Color = {
   crimsonRedMin1: '#F46E92',
   crimsonRedMin2: '#F9B6C9',
   crimsonRedMin3: '#FDE9EF',
+  // Other Red
+  brightMaroon: '#C61F4D',
+  paleRed: '#D35437',
   // Green
   greenPlus2: '#17403A',
   greenPlus1: '#2F7F74',
